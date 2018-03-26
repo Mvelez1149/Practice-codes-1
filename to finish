@@ -1,0 +1,71 @@
+// This program displays a menu and asks the user to make a
+// selection. An if/else if statement determines which item
+// the user has chosen.
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	int choice;       // To hold a menu choice
+	int months;       // To hold the number of months
+	 
+	// Constants for menu choices
+	const int Sanjuan_CHOICE = 1,
+		Ponce_CHOICE = 2,
+		Quebradillas_CHOICE = 3,
+		Hatillo_CHOICE = 4;
+
+	// Display the menu and get a choice.
+	cout << "\t\tCUAL ES LA CAPITAL DE PUERTO RICO\n\n";
+	cout << "1. Sanjuan\n";
+	cout << "2. Ponce\n";
+	cout << "3. Quebradillas\n";
+	cout << "4. Hatillo\n\n";
+	cout << "Enter your choice: ";
+	cin >> choice;
+
+	// Set the numeric ouput formatting.
+	cout << fixed << showpoint << setprecision(2);
+
+	// Respond to the user's menu selection.
+	if (choice == Sanjuan_CHOICE)
+	{
+		cout << "Correct ";
+		
+		 
+	}
+	else if (choice == Ponce_CHOICE)
+	{
+		cout << "incorrect";
+	}
+	else if (choice == Quebradillas_CHOICE)
+	{
+		cout << "incorrect";
+	}
+	else if (choice == Hatillo_CHOICE)
+	{
+		cout << "Program ending.\n";
+	}
+	else
+	{
+		cout << "The valid choices are 1 through 4. Run the\n";
+		cout << "program again and select one of those.\n";
+	}
+
+	//CONSTANT FOR GRADE THRESHOLDS
+	const int A_SCORE = 90,
+		B_SCORE = 80,
+		C_SCORE = 70,
+		D_SCORE = 60;
+
+	int TestScore;
+		cout << "enter your numeric test score and i will\n";
+		cout << "tell you the letter grade you earned: ";
+		cin >> TestScore;
+
+		// Determine the letter grade.
+		if (TestScore >= A_SCORE)
+			cout << "su nota es A\n";
+	system("pause");
+	
