@@ -1,0 +1,17 @@
+ #include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+  int i=0;
+  while(i<=10)
+  {
+    cout << i << endl;
+    i++;
+  }
+  cout  << "valor final de i es: " << i << endl;
+  return 0;
+}
+
+// si "Valor final de i" es removido, solo te dará la lista de números hasta parar y darte el total del valor de i.
