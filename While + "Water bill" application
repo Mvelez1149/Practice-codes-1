@@ -1,0 +1,56 @@
+  #include <iostream>
+using namespace std;
+
+//Authors:
+//Date:
+//Please enter the program description here:
+//
+
+//Function Prototypes
+char getOption();
+void showMenu();
+
+//main function
+int main()
+{
+    char chrOption;
+    
+    showMenu();
+    chrOption = getOption();
+    cout << "Option: "<< chrOption << endl; // <- You can delet these line
+    
+    while(chrOption != 'A' && chrOption != 'B' && chrOption != 'Q')
+    {
+      cout << "La opcion entrada es invalida. Intente de nuevo\n";
+      chrOption = getOption();
+    }
+    
+    cout << "Entro una opcion valida. " << chrOption << endl;
+    //Insert your code here to complete the program
+    //According to the selected option. Use a switch structure
+    //Remember to include cases for incorrect options
+ 
+}
+
+//***************************************
+//function implementations
+
+// This function ask the user for an option, reads a char and return it.
+char getOption()
+{
+    char chrOption;
+    cout << "Please enter your option: ";
+    cin >> chrOption;
+    return chrOption;
+}
+
+//This function shows a menu for the user.
+void showMenu()
+{
+    cout << "\n********** MENU **********\n";
+    cout << "Please select the appropriate option:\n";
+    cout << "A. Run Water Bill sub-program.\n";
+    cout << "B. Run T-Shirts sub-program.\n";
+    cout << "Q. Quit the main program.\n";
+    cout << "**************************\n";
+}
