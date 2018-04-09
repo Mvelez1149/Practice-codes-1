@@ -1,0 +1,47 @@
+// FOR application 2 
+//P E N D I E N T E  A  A M B O S  P R O G R A M A S (Hay diferencia en el ultimo cout***)
+#include <iostream>
+using namespace std;
+
+//Programa ejemplo de running total
+int main()
+{
+	int days; // de Cuantos dias se guardara el total de ventas
+	double total = 0.0, ventaDia;
+	//Preguntar el numero de dias
+	cout << "Para cuantos dias quiere guardar el total: ";
+	cin >> days;
+	for (int i = 1; i<=days; i++)
+	{
+		cout << "Entre las ventas del dia " << i << ": ";
+		cin >> ventaDia;
+		total += ventaDia; //total = total + ventaDia
+		cout << "Total de ventas: " << total << endl;
+	}
+
+	return 0;
+}
+
+************************************************************************************
+
+#include <iostream>
+using namespace std;
+
+//Programa ejemplo de running total
+int main()
+{
+	int days; // de Cuantos dias se guardara el total de ventas
+	double total = 0.0, ventaDia;
+	//Preguntar el numero de dias
+	cout << "Para cuantos dias quiere guardar el total: ";
+	cin >> days;
+	for (int i = 1; i<=days; i++)
+	{
+		cout << "Entre las ventas del dia " << i << ": ";
+		cin >> ventaDia;
+		total += ventaDia; //total = total + ventaDia
+		 
+	}
+  cout << "Total de ventas: " << total << endl;
+	return 0;
+}
