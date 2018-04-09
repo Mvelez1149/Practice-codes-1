@@ -1,0 +1,14 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+//Programa ejemplo de nested loops (reloj)
+int main()
+{
+  cout << fixed << right;
+  for(int sec =0; sec <60; sec++)
+  {
+    cout << setw(2) << sec << endl;
+  }
+  return 0;
+}
