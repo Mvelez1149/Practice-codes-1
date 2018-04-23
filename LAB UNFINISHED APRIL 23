@@ -1,0 +1,82 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+//Authors:
+//Date:
+//Please enter the program description here:
+//
+//
+//
+//
+//
+//
+
+//Function Prototypes
+char getOption();
+void showMenu();
+
+//Prototypes of functions to be implemented by the student
+void subMonthlyRainfall();
+void subHotBeverage();
+
+//main function
+int main()
+{
+	char chrOption;
+	do {
+		showMenu();
+		chrOption = getOption();
+		cout << "Option: " << chrOption << endl; // <- You can delet these line
+
+		switch (chrOption)
+		{
+			cout << " (A) subMonthlyRainfall" << endl; //Insert your code here to call the right functions
+			cout << " (B) subHotBeverage " << endl;
+
+			cin >> chrOption;
+		case 'a':
+		case 'A':  subMonthlyRainfall;
+			break;
+
+		case 'b':
+		case 'B': subHotBeverage;
+			break;
+
+		default: cout <<  "Wrong choice" << endl; //According to the selected option. Use a switch structure
+			break;
+		}//Remember to include cases for incorrect options
+
+
+
+	} while (chrOption != 'Q');
+	cout << "\n You Quit the main program! \n" << endl;
+	return 0;
+}
+	//*****************************************************************
+	//function implementations
+
+	// This function ask the user for an option, reads a char and return it.
+	
+	do {
+		char getOption()
+		{
+			char chrOption;
+			cout << "Please enter your option: ";
+			cin >> chrOption;
+			return chrOption;
+		}
+		
+	} while (chroption != 'Q');
+	cout << " you quit the program!" << endl;
+	
+	//This function shows a menu for the user.
+	void showMenu()
+	{
+		cout << "\n********** MENU **********\n";
+		cout << "Please select the apropriate option:\n";
+		cout << "A. Run Monthly Rainfall sub-program.\n";
+		cout << "B. Run Hot Beverage sub-program.\n";
+		cout << "Q. Quit the main program.\n";
+		cout << "**************************\n";
+	}
